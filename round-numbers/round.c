@@ -6,7 +6,7 @@ int main()
     float decimal;
     int num;
     
-    printf("Enter a decimal number: ");
+    printfl("Enter a decimal number: ");
     fflush(stdout);
     scanf("%f",&decimal);
     num = (int)(decimal + 0.5);
