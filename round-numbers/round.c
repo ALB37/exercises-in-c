@@ -3,11 +3,13 @@
 
 int main()
 {
-    float num;
+    float decimal;
+    int num;
     
-    puts("Enter a decimal number:");
-    scanf("%f",&num);
-    
-    printf("That number rounded is %.0f\n", num);
+    printf("Enter a decimal number: ");
+    fflush(stdout);
+    scanf("%f",&decimal);
+    num = (int)(decimal + 0.5);
+    printf("Your number rounded to the nearest integer is %d\n", num);
     return 0;
 }
