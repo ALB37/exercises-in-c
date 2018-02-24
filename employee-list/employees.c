@@ -26,23 +26,23 @@ int main() {
 	printf("Enter info about your company's employees below\n");
 	printf("To exit data entry, enter a 0 as an employee's last name\n");
 
-	while (1) {
+	while (co.employeeCount < BUFSIZ) {
 		printf("\nEnter an employee's last name: ");
-		fflush(stdin);
+		fflush(stdout);
 		scanf("%s", lname);
 
 		if (lname[0] == '0') break;
 
 		printf("Enter that employee's first name: ");
-		fflush(stdin);
+		fflush(stdout);
 		scanf("%s", fname);
 
 		printf("Enter that employee's title: ");
-		fflush(stdin);
+		fflush(stdout);
 		scanf("%s", title);
 
 		printf("Enter that employee's salary: ");
-		fflush(stdin);
+		fflush(stdout);
 		scanf("%d", &wage);
 
 		strcpy(co.staff[co.employeeCount].last, lname);
