@@ -36,5 +36,5 @@ int main() {
     printf("\nchar array\n");
     inspect(&charray, sizeof(charray));
 
-    return 1;
+    return 0;
 }
